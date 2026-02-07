@@ -1,0 +1,215 @@
+.header {
+  width: 100%;
+  padding: 4vw 4vw;
+  background-color: #f2f0ec;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 100;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
+.logo {
+  height: 120px;
+  display: block;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 2.5rem;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-item a, .dropdown-trigger {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 400;
+  font-size: 1.4rem;
+  letter-spacing: 0.02em;
+  transition: opacity 0.2s;
+  cursor: pointer;
+}
+
+.nav-item a:hover, .dropdown-trigger:hover {
+  opacity: 0.6;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f2f0ec;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.05);
+  padding: 12px 0;
+  z-index: 10;
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  display: block;
+  font-size: 1.2rem;
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(0,0,0,0.02);
+}
+
+/* Hamburger Styles */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px; /* Hit area */
+  margin-right: -10px; /* Offset padding to align with container edge */
+  z-index: 110;
+  outline: none; /* Hide default outline to use custom or none if preferred */
+  -webkit-tap-highlight-color: transparent; /* Remove mobile tap blue box */
+}
+
+.hamburger-box {
+  width: 24px;
+  height: 18px;
+  display: flex; /* Changed from inline-block to flex for better centering */
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+  width: 24px;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  left: 0; /* Explicitly align to start of parent box */
+  transition: transform 0.2s ease, opacity 0.2s ease, top 0.2s ease;
+}
+
+.hamburger-inner {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hamburger-inner::before {
+  content: "";
+  top: -6px;
+}
+
+.hamburger-inner::after {
+  content: "";
+  top: 6px;
+}
+
+.hamburger.open .hamburger-inner {
+  background-color: transparent;
+}
+
+.hamburger.open .hamburger-inner::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.hamburger.open .hamburger-inner::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 1024px) {
+  .logo {
+    height: 70px;
+  }
+
+  .hamburger {
+    display: flex; /* Use flex to ensure content is centered within the button */
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #f2f0ec;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 105;
+  }
+
+  .nav.mobile-open {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Ensure full width for centering */
+    transform: translateY(20px);
+    transition: transform 0.3s ease;
+  }
+
+  .nav-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav.mobile-open .nav-list {
+    transform: translateY(0);
+  }
+
+  .nav-item a, .dropdown-trigger {
+    font-size: 1.8rem;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+
+  .dropdown-content {
+    position: static;
+    display: block;
+    box-shadow: none;
+    background: none;
+    border: none;
+    text-align: center;
+    padding: 0.5rem 0 0 0;
+    width: 100%;
+  }
+
+  .dropdown-content a {
+    font-size: 1.3rem;
+    padding: 0.4rem 0;
+    opacity: 0.7;
+  }
+}

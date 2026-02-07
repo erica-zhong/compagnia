@@ -1,0 +1,62 @@
+.bio-page {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.bio-container {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr; /* Increased image side width dominance */
+  gap: 5rem;
+  align-items: start;
+}
+
+.bio-image {
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.bio-image .optimized-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.bio-name {
+  font-size: 3.5rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  letter-spacing: 0.05em;
+}
+
+.bio-text p {
+  font-size: 1.3rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+  color: #333;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 2rem;
+  text-decoration: none;
+  color: #000;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .bio-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .bio-name {
+    font-size: 2.5rem;
+  }
+}

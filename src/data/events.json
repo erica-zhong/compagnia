@@ -1,0 +1,18 @@
+[
+  {
+    "id": "compagnia-v",
+    "name": "Compagnia V",
+    "date": "Friday, April 10, 2026",
+    "time": "7:00 PM – 8:00 PM",
+    "location": "Marc A. Scorca Hall",
+    "description": "Schubert Cello Quintet",
+    "musicians": [
+      "Ariel Horowitz, Violin",
+      "Jennifer Ahn, Violin",
+      "Hannah Burnett, Viola",
+      "Iona Batchelder, Cello",
+      "Samuel DeCaprio, Cello"
+    ],
+    "ticketLink": "https://www.eventbrite.com/e/compagnia-v-tickets-1981601448275?aff=oddtdtcreator"
+  }
+]

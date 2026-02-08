@@ -14,11 +14,24 @@
       ],
       "settings": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.formatOnSave": true
+        "editor.formatOnSave": true,
+        "workbench.startupEditor": "none",
+        "workbench.activityBar.visible": true,
+        "editor.minimap.enabled": false,
+        "workbench.editorAssociations": {
+          "TODO.md": "default"
+        }
       }
     }
   },
+  "postStartCommand": "code TODO.md",
   "forwardPorts": [5173],
-  "postCreateCommand": "npm install",
+  "portsAttributes": {
+    "5173": {
+      "label": "Website Preview",
+      "onAutoForward": "openBrowser"
+    }
+  },
+  "postCreateCommand": "npm install && echo 'Ready!'",
   "waitFor": "postCreateCommand"
 }

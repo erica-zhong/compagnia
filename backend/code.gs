@@ -37,15 +37,12 @@ function doPost(e) {
  */
 function sendEmailNotification(data) {
   const recipient = "iona@compagnia.org"; // Change this to the director's email
-  const subject = "New Contact Form Submission: " + data.firstName + " " + data.lastName;
-  const body = "You have a new message from your website:
+  const subject = `New Contact Form Submission: ${data.firstName} ${data.lastName}`;
+  const body = `You have a new message from your website:
 
-" +
-               "Name: " + data.firstName + " " + data.lastName + "
-" +
-               "Email: " + data.email + "
-" +
-               "Message: " + data.message;
+Name: ${data.firstName} ${data.lastName}
+Email: ${data.email}
+Message: ${data.message}`;
                
   MailApp.sendEmail(recipient, subject, body);
 }

@@ -76,10 +76,12 @@
     height: auto;
     min-height: 100vh;
     flex-direction: column;
-    padding: 3rem 1.5rem;
+    padding: 3rem 1rem;
     justify-content: flex-start;
     gap: 0;
     overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   /* Make hero-content children direct children of hero-container for ordering */
@@ -89,28 +91,29 @@
     backdrop-filter: none;
     box-shadow: none;
     border: none;
+    width: 100%;
   }
 
   /* Ensure all direct children are properly sized */
   .hero-container > * {
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
   }
 
   /* Order 1: Logo and Subtitle */
-  .hero-content > *:nth-child(1) { order: 1; } /* Logo FadeIn */
-  .hero-content > *:nth-child(2) { order: 2; } /* Subtitle FadeIn */
+  .hero-content > *:nth-child(1) { order: 1; width: 100%; } /* Logo FadeIn */
+  .hero-content > *:nth-child(2) { order: 2; width: 100%; } /* Subtitle FadeIn */
   
   /* Order 3: The Painting */
   .hero-container .hero-image.optimized-image-container {
     position: relative !important;
     order: 3;
-    width: 100%;
+    width: 100% !important;
     margin: 1.5rem 0;
     height: auto;
-    aspect-ratio: 16/10;
-    max-height: 40vh;
+    aspect-ratio: 16/9;
+    max-height: 35vh;
     z-index: 1;
   }
 
@@ -123,7 +126,7 @@
   /* Order 4: Countdown */
   .hero-content > *:nth-child(3) { 
     order: 4; 
-    width: 100%;
+    width: 100% !important;
     background-color: transparent;
     padding: 0;
     border-radius: 0;
@@ -134,19 +137,25 @@
     border-top: none;
     margin-top: 0;
     padding-top: 0;
+    width: 100% !important;
   }
 
   .hero-logo-wrapper .optimized-image-container {
-    width: 280px;
+    width: 250px;
+    max-width: 80%;
+    margin: 0 auto;
   }
   
   .hero-subtitle {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-bottom: 1rem;
-    padding: 0 1rem;
+    padding: 0 0.5rem;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .hero-logo-wrapper {
     margin-bottom: 1.5rem;
+    width: 100%;
   }
 }

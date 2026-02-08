@@ -76,9 +76,9 @@
 /* Hamburger Styles */
 .hamburger {
   display: none;
-  background: transparent;
-  border: none;
-  box-shadow: none;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
   cursor: pointer;
   padding: 10px;
   margin-right: -10px;
@@ -91,8 +91,9 @@
   min-height: 0;
 }
 
-.hamburger:hover {
-  background-color: transparent;
+.hamburger:hover, .hamburger:focus {
+  background-color: transparent !important;
+  border: none !important;
 }
 
 .hamburger-box {

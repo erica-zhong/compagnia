@@ -6,17 +6,26 @@ A modern, elegant web application for **Compagnia**, a chamber music collective 
 
 ... [Features list] ...
 
-## 🎨 Quick Start for Non-Developers (iPad & Web)
+## 🎻 Director's Guide (iPad & Web)
 
 The easiest way to edit this project is using **GitHub Codespaces**. This gives you a full computer in your browser.
 
 1.  **Open the Environment**: Click the green **"Code"** button at the top of this page, select **Codespaces**, and click **"Create codespace on main"**.
-2.  **Wait for Setup**: A new tab will open. You will see a `TODO.md` file with instructions. **Wait about 1 minute** while the system automatically installs everything and starts the preview.
+2.  **Wait for Setup**: A new tab will open. **Wait about 1 minute** while the system automatically installs everything and starts the preview.
 3.  **View the Website**: A pop-up will appear in the bottom right. Click **"Open in Browser"** to see your live preview.
-4.  **Using Gemini (AI Assistant)**:
-    - If you want the AI to change something for you, press `Cmd + Shift + P` (iPad/Mac) or `Ctrl + Shift + P` (Windows).
-    - Type **"Gemini"** and select **"Gemini: Focus on Gemini View"**.
-    - You can now chat with the AI to help you edit the site!
+
+### ⚡️ Quick Tasks
+- [ ] **Setup Your Contact Sheet**: Currently, messages go to a test sheet. To own your data:
+    1. Create a new Google Sheet and copy its URL.
+    2. Tell the AI (Gemini): **"Please update my contact sheet ID to [Paste Your URL Here] and push the change to Apps Script."**
+- [ ] **Add a New Concert**: Open `src/data/events.json` and add a new entry.
+- [ ] **Update a Bio**: Open `src/data/musicians.json` and change the text for a musician.
+- [ ] **Using the AI Assistant**: Press `Cmd + Shift + P` (iPad/Mac), type **"Gemini"**, and select **"Focus on Gemini View"** to chat with the AI for help with any changes.
+
+### 🚀 How to Save Your Changes
+1. Click the **Source Control** icon on the far left (looks like a branch with a circle).
+2. Type a short note (e.g., "Updated bios") and click **Commit**.
+3. Click **Sync Changes** to make them live on **compagnia.org**.
 
 ## 🚀 Tech Stack
 

@@ -19,12 +19,12 @@
         "workbench.activityBar.visible": true,
         "editor.minimap.enabled": false,
         "workbench.editorAssociations": {
-          "TODO.md": "default"
+          "README.md": "default"
         }
       }
     }
   },
-  "postStartCommand": "code TODO.md",
+  "postStartCommand": "code README.md",
   "forwardPorts": [5173],
   "portsAttributes": {
     "5173": {

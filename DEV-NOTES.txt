@@ -17,12 +17,12 @@
 
 ## IN PROGRESS / PENDING (Tracked in GitHub Issues)
 - [x] Add biographies for Jennifer Ahn, Hannah Burnett, and Samuel DeCaprio
-- [ ] [STYLING] Refine styling (Issue #8)
+- [ ] Refine styling based on original Squarespace theme (Issue #8)
 - [x] 📱 Implement Mobile Hamburger Menu
 - [x] ✨ Add scroll-triggered animations (fade-in elements)
-- [ ] [PERFORMANCE] Implement image loading optimizations (Issue #6)
+- [ ] Implement image loading optimizations (Issue #6)
 - [x] 🛠️ Refactor hardcoded data into a separate JSON file
-- [ ] [SETUP / SEO] Update SEO metadata and add custom Favicon (Issue #7)
+- [ ] Update SEO metadata and add custom Favicon (Issue #7)
 - [x] ✉️ Connect Contact form to a real email service (Google Sheets & Email via Apps Script)
-- [ ] [ENHANCEMENT] Embed Google Map on the Events page (Issue #4)
-- [ ] [ENHANCEMENT] Add Newsletter Signup form to the footer (Issue #5)
+- [ ] Embed Google Map on the Events page (Issue #4)
+- [ ] Add Newsletter Signup form to the footer (Issue #5)

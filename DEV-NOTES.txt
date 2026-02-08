@@ -11,18 +11,18 @@
 - [x] Add countdown clock to April 10 7pm
 - [x] Add contact form with success notifications
 - [x] Add Donate tab linking to Fractured Atlas
-
-## IN PROGRESS / PENDING
-- [x] Add biographies for Jennifer Ahn, Hannah Burnett, and Samuel DeCaprio
-- [ ] Further styling refinements based on original Squarespace theme
-- [x] 📱 Implement Mobile Hamburger Menu
-- [x] ✨ Add scroll-triggered animations (fade-in elements)
-- [ ] 🖼️ Implement image loading optimizations (blur-up/skeleton)
-- [x] 🛠️ Refactor hardcoded data into a separate JSON file
-- [ ] 🔍 Update SEO metadata and add custom Favicon
-- [x] ✉️ Connect Contact form to a real email service (Google Sheets & Email via Apps Script)
-- [ ] 🗺️ Embed Google Map on the Events page
-- [ ] 📰 Add Newsletter Signup form to the footer
 - [x] fix painting layout on mobile homepage
 - [x] put in original text bios from old Website
 - [x] fix mobile bios so they land at top of page not middle
+
+## IN PROGRESS / PENDING (Tracked in GitHub Issues)
+- [x] Add biographies for Jennifer Ahn, Hannah Burnett, and Samuel DeCaprio
+- [ ] Further styling refinements (Issue #8)
+- [x] 📱 Implement Mobile Hamburger Menu
+- [x] ✨ Add scroll-triggered animations (fade-in elements)
+- [ ] 🖼️ Implement image loading optimizations (Issue #6)
+- [x] 🛠️ Refactor hardcoded data into a separate JSON file
+- [ ] 🔍 Update SEO metadata and add custom Favicon (Issue #7)
+- [x] ✉️ Connect Contact form to a real email service (Google Sheets & Email via Apps Script)
+- [ ] 🗺️ Embed Google Map on the Events page (Issue #4)
+- [ ] 📰 Add Newsletter Signup form to the footer (Issue #5)

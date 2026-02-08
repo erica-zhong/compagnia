@@ -12,6 +12,13 @@
   overflow: hidden;
   border-radius: 16px;
   background-color: #f2f0ec;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border: 1px solid rgba(0,0,0,0.03);
+}
+
+.image-container:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.08);
 }
 
 /* Aspect ratio fallback for older browsers */

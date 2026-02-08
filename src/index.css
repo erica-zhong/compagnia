@@ -3,6 +3,9 @@
   line-height: 1.5;
   font-weight: 400;
 
+  --theme-khaki: #f2f0ec;
+  --theme-dark: #1a1a1a;
+
   color: #000000;
   background-color: #ffffff;
 
@@ -32,31 +35,37 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: clamp(2.2rem, 8vw, 3.2rem);
   line-height: 1.1;
 }
 
 .page-title {
   text-align: center;
-  font-size: 3.5rem;
+  font-size: clamp(2.2rem, 8vw, 3.5rem);
   font-weight: 300;
-  margin-bottom: 4rem;
+  margin: 3rem auto 4rem;
   letter-spacing: 0.05em;
+  max-width: 90%;
 }
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
+  border-radius: 4px;
+  border: 1px solid var(--theme-dark);
+  padding: 0.6em 1.5em;
+  font-size: 0.95em;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: var(--theme-dark);
+  color: white;
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: all 0.25s ease;
 }
+
 button:hover {
-  border-color: #646cff;
+  background-color: transparent;
+  color: var(--theme-dark);
 }
 button:focus,
 button:focus-visible {

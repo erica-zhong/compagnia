@@ -18,7 +18,7 @@ const Contact: FC = () => {
     };
 
     try {
-      await fetch('https://script.google.com/macros/s/AKfycbw92MxOFD85ybezluW8bZGbxWZlMJG-5YSvdRQa3J79U-0KpWm-mdthtraehT5fNWfe/exec', {
+      await fetch('https://script.google.com/macros/s/AKfycbzQeDdTD-XsBtrcZ52HaPm2T7r4XJTsaGPhZTbWVhsQSzqeV8CcjBRCmV6l5_nCZh2Q/exec', {
         method: 'POST',
         mode: 'no-cors',
         headers: {
@@ -28,6 +28,7 @@ const Contact: FC = () => {
       });
 
       setStatus('success');
+      (e.target as HTMLFormElement).reset();
       // Reset form status after 10 seconds
       setTimeout(() => setStatus('idle'), 10000);
     } catch (error) {

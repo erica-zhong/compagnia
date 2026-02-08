@@ -23,3 +23,6 @@
 - [x] ✉️ Connect Contact form to a real email service (Google Sheets & Email via Apps Script)
 - [ ] 🗺️ Embed Google Map on the Events page
 - [ ] 📰 Add Newsletter Signup form to the footer
+- [x] fix painting layout on mobile homepage
+- [x] put in original text bios from old Website
+- [x] fix mobile bios so they land at top of page not middle

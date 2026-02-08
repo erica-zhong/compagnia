@@ -76,9 +76,10 @@
     height: auto;
     min-height: 100vh;
     flex-direction: column;
-    padding: 4rem 1.5rem;
+    padding: 3rem 1.5rem;
     justify-content: flex-start;
     gap: 0;
+    overflow: hidden;
   }
 
   /* Make hero-content children direct children of hero-container for ordering */
@@ -90,7 +91,7 @@
     border: none;
   }
 
-  /* Ensure all direct children (FadeIn wrappers) are full width */
+  /* Ensure all direct children are properly sized */
   .hero-container > * {
     width: 100%;
     max-width: 100%;

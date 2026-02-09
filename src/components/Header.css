@@ -68,11 +68,12 @@
 }
 
 .dropdown-content {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-50%) translateY(10px);
   position: absolute;
   top: calc(100% + 1rem);
   left: 50%;
-  transform: translateX(-50%);
   background-color: rgba(223, 211, 189, 0.98); /* Matching theme-khaki with slight transparency */
   backdrop-filter: blur(10px);
   min-width: 160px;
@@ -81,6 +82,7 @@
   z-index: 10;
   border: 1px solid rgba(0,0,0,0.05);
   border-radius: 8px;
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
 }
 
 /* Bridge the gap so the dropdown doesn't close when moving mouse - Desktop Only */
@@ -97,7 +99,9 @@
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
 }
 
 .dropdown-content a {
@@ -262,6 +266,8 @@
   .dropdown-content {
     position: static;
     display: block;
+    opacity: 1;
+    visibility: visible;
     box-shadow: none;
     background: none;
     border: none;
@@ -270,6 +276,7 @@
     width: 100%;
     transform: none;
     left: auto;
+    transition: none;
   }
 
   .dropdown-content a {

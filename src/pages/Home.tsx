@@ -9,7 +9,7 @@ const Home: FC = () => {
     <div className="home-page">
       <div className="hero-container">
         <OptimizedImage 
-          src="https://images.squarespace-cdn.com/content/v1/69586da7d6ff99271b20b83e/47b394fa-28df-47a6-909c-609017346213/Adolph_Menzel_-_Fl%C3%B6tenkonzert_Friedrichs_des_Gro%C3%9Fen_in_Sanssouci_-_Google_Art_Project.jpg" 
+          src="/images/home-bg.jpg" 
           alt="Compagnia Hero" 
           className="hero-image fill"
         />
@@ -17,7 +17,7 @@ const Home: FC = () => {
           <FadeIn direction="none">
             <div className="hero-logo-wrapper">
               <OptimizedImage 
-                src="https://images.squarespace-cdn.com/content/v1/69586da7d6ff99271b20b83e/6f036fff-8eae-47ac-b330-68f2e21306b1/Compagnia+Logo+%285%29.png" 
+                src="/images/logo-full.png" 
                 alt="Compagnia Logo" 
                 className="hero-logo"
               />

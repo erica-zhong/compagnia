@@ -15,7 +15,7 @@ const Header: FC = () => {
         <div className="logo-container">
           <Link to="/" onClick={closeMenu}>
             <img 
-              src="https://images.squarespace-cdn.com/content/v1/69586da7d6ff99271b20b83e/6f036fff-8eae-47ac-b330-68f2e21306b1/Compagnia+Logo+%285%29.png" 
+              src="/images/logo-full.png" 
               alt="Compagnia" 
               className="logo"
             />

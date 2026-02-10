@@ -33,7 +33,7 @@
 
 .newsletter-fields input {
   background: rgba(0, 0, 0, 0.02);
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 4px;
   padding: 0.6rem 1rem;
   font-family: inherit;
@@ -41,6 +41,11 @@
   outline: none;
   transition: all 0.3s ease;
   width: 140px;
+}
+
+.newsletter-fields input::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+  opacity: 1;
 }
 
 .newsletter-fields input:focus {

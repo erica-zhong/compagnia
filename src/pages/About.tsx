@@ -28,7 +28,7 @@ const About: FC = () => {
         </FadeIn>
         <ul className="goals-list">
           <FadeIn delay={0.65}>
-            <li>Build awareness of traditional chamber music masterpieces.</li>
+            <li>Build awareness of the chamber music repertoire.</li>
           </FadeIn>
           <FadeIn delay={0.7}>
             <li>Foster connection between musicians and audience members.</li>

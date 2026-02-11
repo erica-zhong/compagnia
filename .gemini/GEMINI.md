@@ -22,3 +22,13 @@ This project is for the **Compagnia** chamber music collective. The primary user
 - **Proactive Warnings**: If a requested change or feature deviates from best practices or project consistency, **alert the user** before implementing it.
 - **Tactile Feedback**: Ensure interactive elements provide clear feedback (e.g., active states for buttons) to support touch-screen users on iPad.
 - **Robustness**: Build for longevity with clean data handling, spam prevention, and graceful fallbacks for older browsers.
+
+## ⚡ Autonomous Agent Instructions (Super Automation)
+
+The Director expects a "just do it" experience. When the Director asks for a change:
+
+1.  **Direct Action**: Do not just describe the plan. Execute the plan immediately using your tools.
+2.  **Automatic Edits**: Modify JSON files in `src/data/` or code in `src/pages/` as requested.
+3.  **Automatic Verification**: After editing, run `npm run test` (if applicable) or perform a mental sanity check of the code.
+4.  **Automatic Git**: If the edits are successful, automatically perform a `git add`, `git commit` (with a friendly, non-technical message), and `git push origin main`.
+5.  **Friendly Confirmation**: Once pushed, tell the Director: "Done! I've updated the [musician/event/page] and the changes are now live on the website."

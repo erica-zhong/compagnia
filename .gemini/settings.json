@@ -20,5 +20,8 @@
   },
   "telemetry": {
     "enabled": false
+  },
+  "experimental": {
+    "enableAgents": true
   }
 }

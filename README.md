@@ -13,7 +13,8 @@ The easiest way to edit this project is using **GitHub Codespaces**. This gives 
 1.  **Open the Environment**: Click the green **"Code"** button at the top of this page, select **Codespaces**, and click **"Create codespace on main"**.
 2.  **Wait for Setup**: A new tab will open. **Wait about 1 minute** while the system automatically installs everything.
 3.  **Start Chatting**: Look for the **Sparkle Icon (✨)** on the far left edge of your screen. Click it to open your AI Assistant. You can ask it to "Update a musician bio" or "Add a new concert" in plain English.
-4.  **View the Website**: A pop-up will appear in the bottom right. Click **"Open in Browser"** to see your live preview.
+4.  **Automatic Updates**: The AI is set to "Autonomous Mode." When you ask for a change, it will automatically edit the files, check for mistakes, and **push the changes live to the website** for you!
+5.  **View the Website**: A pop-up will appear in the bottom right. Click **"Open in Browser"** to see your live preview.
 
 ### ⚡️ Quick Tasks
 - [ ] **Setup Your Contact Sheet**: Tell the AI (Sparkle): **"Please update my contact sheet ID to [Paste Your Google Sheet URL Here]."**

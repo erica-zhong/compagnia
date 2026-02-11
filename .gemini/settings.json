@@ -11,11 +11,11 @@
     "name": "auto"
   },
   "tools": {
-    "approvalMode": "auto_edit",
-    "trust": {
-      "trustedPaths": [
-        "."
-      ]
+    "approvalMode": "auto_edit"
+  },
+  "security": {
+    "folderTrust": {
+      "enabled": false
     }
   },
   "telemetry": {

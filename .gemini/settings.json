@@ -11,7 +11,12 @@
     "name": "auto"
   },
   "tools": {
-    "approvalMode": "auto_edit"
+    "approvalMode": "auto_edit",
+    "trust": {
+      "trustedPaths": [
+        "."
+      ]
+    }
   },
   "telemetry": {
     "enabled": false

@@ -33,6 +33,6 @@
       "onAutoForward": "openBrowser"
     }
   },
-  "postCreateCommand": "npm install && export PATH=$PATH:$(npm config get prefix)/bin && echo 'Ready!'",
+  "postCreateCommand": "npm install && sudo ln -s $(npm config get prefix)/bin/gemini /usr/local/bin/gemini && echo 'Ready!'",
   "waitFor": "postCreateCommand"
 }

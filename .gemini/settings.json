@@ -4,7 +4,8 @@
   },
   "general": {
     "previewFeatures": true,
-    "enableAutoUpdate": false
+    "enableAutoUpdate": false,
+    "showWelcomeTips": false
   },
   "model": {
     "name": "auto"

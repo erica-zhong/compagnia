@@ -2,9 +2,7 @@
   "name": "Compagnia Web Dev",
   "image": "mcr.microsoft.com/devcontainers/typescript-node:1-20-bullseye",
   "features": {
-    "ghcr.io/devcontainers/features/node:1": {
-      "globalPackages": "@google/gemini-cli"
-    }
+    "ghcr.io/devcontainers/features/node:1": {}
   },
   "customizations": {
     "vscode": {
@@ -33,6 +31,6 @@
       "onAutoForward": "openBrowser"
     }
   },
-  "postCreateCommand": "npm install && sudo ln -s $(npm config get prefix)/bin/gemini /usr/local/bin/gemini && echo 'Ready!'",
+  "postCreateCommand": "npm install && sudo npm install -g @google/gemini-cli && echo 'Ready!'",
   "waitFor": "postCreateCommand"
 }

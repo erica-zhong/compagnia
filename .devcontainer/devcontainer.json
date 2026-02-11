@@ -2,7 +2,9 @@
   "name": "Compagnia Web Dev",
   "image": "mcr.microsoft.com/devcontainers/typescript-node:1-20-bullseye",
   "features": {
-    "ghcr.io/devcontainers/features/node:1": {}
+    "ghcr.io/devcontainers/features/node:1": {
+      "globalPackages": "@google/gemini-cli"
+    }
   },
   "customizations": {
     "vscode": {
@@ -32,6 +34,6 @@
       "onAutoForward": "openBrowser"
     }
   },
-  "postCreateCommand": "npm install && echo 'Ready!'",
+  "postCreateCommand": "npm install && gemini config set experimental.ide_extension_check false && echo 'Ready!'",
   "waitFor": "postCreateCommand"
 }

@@ -1,5 +1,11 @@
 {
   "ide": {
     "hasSeenNudge": true
+  },
+  "general": {
+    "previewFeatures": true
+  },
+  "model": {
+    "name": "auto"
   }
 }

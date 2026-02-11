@@ -7,11 +7,11 @@
   "customizations": {
     "vscode": {
       "extensions": [
+        "google.gemini-vsc",
+        "google.gemini-cli-companion",
         "esbenp.prettier-vscode",
         "dbaeumer.vscode-eslint",
-        "dsznajder.es7-react-js-snippets",
-        "google.gemini-cli-companion",
-        "google.gemini-vsc"
+        "dsznajder.es7-react-js-snippets"
       ],
       "settings": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -26,12 +26,6 @@
           "README.md": "default"
         }
       }
-    },
-    "codespaces": {
-      "extensions": [
-        "google.gemini-vsc",
-        "google.gemini-cli-companion"
-      ]
     }
   },
   "forwardPorts": [5173],

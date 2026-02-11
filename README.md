@@ -8,28 +8,27 @@ A modern, elegant web application for **Compagnia**, a chamber music collective 
 
 ## 🎻 Director's Guide (iPad & Web)
 
-The easiest way to edit this project is using **GitHub Codespaces**. This gives you a full computer in your browser.
+
+
+The easiest way to edit this project is using **GitHub Codespaces**.
+
+
 
 1.  **Open the Environment**: Click the green **"Code"** button at the top of this page, select **Codespaces**, and click **"Create codespace on main"**.
 
-2.  **Install the AI**: A small box will pop up in the bottom right asking to install the "Recommended Extensions." Click **Install**.
+2.  **Start Chatting**: In the black box at the bottom (the Terminal), type the letter **`g`** and hit Enter. 
 
-3.  **Start Chatting**: Look for the **Sparkle Icon (✨)** on the far left edge of your screen. Click it to open your AI Assistant.
+3.  **Ask for Changes**: Tell the AI what you want to do in plain English (e.g., "Change the concert date to March 15th").
 
- You can ask it to "Update a musician bio" or "Add a new concert" in plain English.
-4.  **Automatic Updates**: The AI is set to "Autonomous Mode." When you ask for a change, it will automatically edit the files, check for mistakes, and **push the changes live to the website** for you!
-5.  **View the Website**: A pop-up will appear in the bottom right. Click **"Open in Browser"** to see your live preview.
+4.  **Automatic Updates**: The AI will edit the files and **push the changes live to the website** for you automatically!
 
-### ⚡️ Quick Tasks
-- [ ] **Setup Your Contact Sheet**: Tell the AI (Sparkle): **"Please update my contact sheet ID to [Paste Your Google Sheet URL Here]."**
-- [ ] **Add a New Concert**: Ask the AI: **"I want to add a new concert for March 15th."**
-- [ ] **Using Shortcuts**: Press `Cmd + Shift + P` and search for **"Update Musicians"** to jump straight to the data.
+
 
 ### 🚀 How to Save Your Changes
-The AI is set to automatically save and push your changes. If you ever need to save a change manually:
-1. Click the **Source Control** icon on the far left (looks like a branch with a circle).
-2. Type a short note (e.g., "Updated bios") and click **Commit**.
-3. Click **Sync Changes** to make them live on **compagnia.org**.
+
+The AI handles the saving for you. If you ever need to save a change manually, use the **Source Control** tab on the left to "Commit" and "Sync" your work.
+
+
 
 ### 🛡️ The "Safety Gate" (Automated Checks)
 To ensure the website doesn't break, I've added an **Automated Safety Gate**. Every time you "Commit" and "Sync" your changes, a robot automatically checks two things:

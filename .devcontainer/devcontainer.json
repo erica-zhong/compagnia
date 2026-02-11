@@ -26,7 +26,6 @@
       }
     }
   },
-  "postStartCommand": "code README.md",
   "forwardPorts": [5173],
   "portsAttributes": {
     "5173": {
